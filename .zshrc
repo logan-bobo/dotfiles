@@ -12,6 +12,7 @@ eval "$(pyenv init -)"
 alias ll="ls -lah"
 alias df="df -h"
 alias du="du -h"
+alias chrome='open -a "Google Chrome.app"'
 
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
