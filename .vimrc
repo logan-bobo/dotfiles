@@ -1,3 +1,5 @@
 syntax on
 
-:set relativenumber
+set relativenumber
+
+
