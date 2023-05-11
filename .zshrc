@@ -13,7 +13,8 @@ alias ll="ls -lah"
 alias df="df -h"
 alias du="du -h"
 alias chrome='open -a "Google Chrome.app"'
-alias history='history 0'
+alias history="history 0"
+alias vim="nvim"
 
 # sensible history 
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
@@ -32,10 +33,12 @@ flush-dns(){
 
 source /Users/logancox/.docker/init-zsh.sh || true # Added by Docker Desktop
 
+# For node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# For Golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
