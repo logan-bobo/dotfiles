@@ -14,7 +14,6 @@ alias df="df -h"
 alias du="du -h"
 alias chrome='open -a "Google Chrome.app"'
 alias history="history 0"
-alias vim="nvim"
 
 # sensible history 
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
