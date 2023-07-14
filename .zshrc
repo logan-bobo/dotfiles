@@ -14,8 +14,8 @@ alias df="df -h"
 alias du="du -h"
 alias chrome='open -a "Google Chrome.app"'
 alias history="history 0"
-
-# sensible history 
+alias k="kubectl"
+# sensible history
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=2000
 SAVEHIST=1000
@@ -42,3 +42,4 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh) # add autocomplete permanently to your zsh shell
+
