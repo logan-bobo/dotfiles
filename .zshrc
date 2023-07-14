@@ -43,3 +43,4 @@ export PATH=$PATH:$GOPATH/bin
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh) # add autocomplete permanently to your zsh shell
 
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
