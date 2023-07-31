@@ -13,3 +13,6 @@ gpgconf --launch gpg-agent
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# start yabai
+yabai --start-service
