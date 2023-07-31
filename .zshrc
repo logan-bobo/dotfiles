@@ -15,6 +15,7 @@ alias du="du -h"
 alias chrome='open -a "Google Chrome.app"'
 alias history="history 0"
 alias k="kubectl"
+
 # sensible history
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=2000
@@ -32,15 +33,9 @@ flush-dns(){
 
 source /Users/logancox/.docker/init-zsh.sh || true # Added by Docker Desktop
 
-# For node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# For Golang
+# go 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-[[ $commands[kubectl] ]] && source <(kubectl completion zsh) # add autocomplete permanently to your zsh shell
-
+# kube
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
