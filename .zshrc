@@ -21,6 +21,7 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=2000
 SAVEHIST=1000
 
+# make
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
 if [ "$TMUX" = "" ]; then tmux; fi
@@ -30,8 +31,6 @@ flush-dns(){
   sudo dscacheutil -flushcache
   sudo killall -HUP mDNSResponder
 }
-
-source /Users/logancox/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 # go 
 export GOPATH=$HOME/go
