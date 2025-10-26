@@ -1,0 +1,186 @@
+@import "./mocha.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @base;
+    color: @text;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-bottom: 2px solid @surface0;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Memory Module */
+#memory {
+    background-color: @mauve;
+    color: @base;
+    padding: 5px 15px;
+    margin: 5px 2px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#memory:hover {
+    background-color: @lavender;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Workspaces */
+#workspaces {
+    background: @surface0;
+    margin: 5px;
+    padding: 0px 1px;
+    border-radius: 15px;
+    font-weight: normal;
+}
+
+#workspaces button {
+    background: @surface0;
+    color: @subtext1;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 3px 3px;
+    min-width: 33px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background: @blue;
+    color: @base;
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    background: @surface2;
+    color: @text;
+    border-radius: 15px;
+    min-width: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* CPU Module */
+#cpu {
+    background-color: @peach;
+    color: @base;
+    padding: 5px 15px;
+    margin: 5px 2px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#cpu:hover {
+    background-color: @yellow;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Clock Module */
+#clock {
+    background-color: @blue;
+    color: @base;
+    padding: 5px 20px;
+    margin: 5px 0px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Bluetooth Module */
+#bluetooth {
+    background-color: @sapphire;
+    color: @base;
+    padding: 5px 12px;
+    margin: 5px 2px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#bluetooth.disconnected {
+    background-color: @surface2;
+    color: @subtext1;
+}
+
+#bluetooth:hover {
+    background-color: @sky;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Network Module */
+#network {
+    background-color: @teal;
+    color: @base;
+    padding: 5px 12px;
+    margin: 5px 2px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#network.disconnected {
+    background-color: @red;
+    color: @base;
+}
+
+#network:hover {
+    background-color: @green;
+    transition: all 0.3s ease-in-out;
+}
+
+/* PulseAudio Module */
+#pulseaudio {
+    background-color: @yellow;
+    color: @base;
+    padding: 5px 12px;
+    margin: 5px 2px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#pulseaudio.muted {
+    background-color: @surface2;
+    color: @subtext1;
+}
+
+#pulseaudio:hover {
+    background-color: @peach;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Backlight Module */
+#backlight {
+    background-color: @flamingo;
+    color: @base;
+    padding: 5px 12px;
+    margin: 5px 2px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#backlight:hover {
+    background-color: @pink;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Tooltips */
+tooltip {
+    background: @surface0;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @surface2;
+}
+
+tooltip label {
+    color: @text;
+    padding: 5px 10px;
+}
