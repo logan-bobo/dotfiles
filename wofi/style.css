@@ -1,0 +1,117 @@
+/* Catppuccin Mocha Colors */
+@define-color rosewater #f5e0dc;
+@define-color flamingo #f2cdcd;
+@define-color pink #f5c2e7;
+@define-color mauve #cba6f7;
+@define-color red #f38ba8;
+@define-color maroon #eba0ac;
+@define-color peach #fab387;
+@define-color yellow #f9e2af;
+@define-color green #a6e3a1;
+@define-color teal #94e2d5;
+@define-color sky #89dceb;
+@define-color sapphire #74c7ec;
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color text #cdd6f4;
+@define-color subtext1 #bac2de;
+@define-color subtext0 #a6adc8;
+@define-color overlay2 #9399b2;
+@define-color overlay1 #7f849c;
+@define-color overlay0 #6c7086;
+@define-color surface2 #585b70;
+@define-color surface1 #45475a;
+@define-color surface0 #313244;
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
+
+* {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+}
+
+/* Main window */
+window {
+    margin: 0px;
+    border: 2px solid @mauve;
+    background-color: transparent; /* Changed from @base */
+    border-radius: 15px;
+}
+
+/* Input field */
+#input {
+    all: unset;
+    min-height: 36px;
+    padding: 4px 10px;
+    margin: 4px;
+    border: none;
+    color: @text;
+    background-color: @surface0;
+    border-radius: 10px;
+    selection-background-color: @surface2;
+}
+
+#input:focus {
+    border: 2px solid @mauve;
+}
+
+/* Inner box */
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: @base;
+    border-radius: 10px;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: @base; /* Background goes here now */
+    border-radius: 15px;
+}
+
+/* Scrollable area */
+#scroll {
+    margin: 0px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Entry item */
+#entry {
+    margin: 2px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color: @text;
+}
+
+#entry:selected {
+    background-color: @surface2;
+    color: @text;
+}
+
+#entry:hover {
+    background-color: @surface1;
+}
+
+/* Entry text */
+#text {
+    margin: 5px;
+    border: none;
+    color: @text;
+    font-weight: normal;
+}
+
+#entry:selected #text {
+    color: @text;
+    font-weight: bold;
+}
+
+/* Image/icon */
+#img {
+    background-color: transparent;
+    margin: 5px;
+    border-radius: 5px;
+}
